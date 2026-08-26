@@ -17,7 +17,7 @@ function openGift(type) {
     
     if (type === 'award') {
     contentDiv.innerHTML = `
-        <h3>HAPPY RAKSHABANDHAN</h3>
+        <h1>HAPPY RAKSHABANDHAN</h1>
         <p class="award-text">
             Dear Yana,<br><br>
             Happy Raksha Bandhan to the most amazing sister! ❤️ You are not just my sister, but also my best friend, my partner in all the fun, and the person who makes every moment more special. We may fight, tease each other, and annoy each other sometimes, but at the end of the day, I'm always grateful to have you in my life. I hope you always stay happy, keep smiling, and achieve everything you dream of. No matter what happens, I'll always be there for you. Happy Raksha Bandhan, Yana! Love you! 🎀
