@@ -25,7 +25,7 @@ function openGift(type) {
     `;
 
     } else if (type === 'memories') {
-        contentDiv.innerHTML = `<h3>📸 Memories 📸</h3><p>[Insert your cute childhood photos here]</p>`;
+        contentDiv.innerHTML = `<h3>📸 Memories 📸</h3><p><img src="yana1.jpg" alt="Cute Childhood Photo"></p>`;
     } else if (type === 'letter') {
         contentDiv.innerHTML = `<h3>💌 A Note For You 💌</h3><p>Thank you for always having my back. Love you!</p>`;
     }
