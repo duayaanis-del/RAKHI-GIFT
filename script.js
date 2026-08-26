@@ -25,9 +25,21 @@ function openGift(type) {
     `;
 
     } else if (type === 'memories') {
-        contentDiv.innerHTML = `<h3>📸 Memories 📸</h3><p><img src="yana1.jpg" alt="Cute Childhood Photo"></p>`;
+        contentDiv.innerHTML = `<h3>📸 Memories 📸</h3>
+        <div class="memories-container">
+            <img src="yana1.jpg" alt="Cute Childhood Photo" class="memory-img">
+            <img src="yana 2.jpg" alt="Sisterly Bond" class="memory-img">
+            <img src="yana 4.jpg" alt="Fun Times Together" class="memory-img">
+            <img src="yana 5.jpg" alt="Cherished Moments" class="memory-img">
+        </div>
+        
+        </p>`;
     } else if (type === 'letter') {
-        contentDiv.innerHTML = `<h3>💌 A Note For You 💌</h3><p>Thank you for always having my back. Love you!</p>`;
+        contentDiv.innerHTML = `<h3>💌 A Note For You 💌</h3><p>**Dear Yana, ❤️<br><br>
+Happy Raksha Bandhan to the best sister ever! I’m really lucky to have you in my life. You make everything more fun, and even though we fight and annoy each other sometimes, I wouldn’t trade you for anyone. Thank you for always being there, for all the laughs, and for making so many memories with me. I hope you always keep smiling, stay happy, and achieve everything you wish for. No matter how much we argue, you’ll always have a special place in my heart.<br>
+Happy Raksha Bandhan, Yana! 🫶🎀<br>
+Love you always! ❤️
+</p>`;
     }
     
     nextScreen(3);
