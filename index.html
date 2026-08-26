@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Gift For You!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card-container">
+        <!-- Screen 1: Intro Question -->
+        <div id="screen-1" class="screen active">
+            <h2 class="cute-title">I have made something for you! ❤️</h2>
+            <p>Do you wanna see it?</p>
+            <div class="btn-group">
+                <button id="yes-btn" onclick="nextScreen(2)">YES 😊</button>
+                <button id="no-btn" onclick="nextScreen(4)">NO ❌</button>
+            </div>
+        </div>
+
+        <!-- Screen 2: Gift Boxes Selection -->
+        <div id="screen-2" class="screen">
+            <h2>Each gift has something for you.</h2>
+            <p>CLICK ON ONE! 👇</p>
+            <div class="gifts">
+                <div class="gift-box" onclick="openGift('award')">🎁</div>
+                <div class="gift-box" onclick="openGift('memories')">🎁</div>
+                <div class="gift-box" onclick="openGift('letter')">🎁</div>
+                <div class="gift-box"></div> <button onclick="nextScreen(1)">Back</button>
+            </div>
+        </div>
+
+        <!-- Screen 3: Content Display (Changes based on gift clicked) -->
+        <div id="screen-3" class="screen">
+            <div id="gift-content">
+                <!-- Dynamic content loads here -->
+            </div>
+            <button class="back-btn" onclick="nextScreen(2)">⬅️ Back to Gifts</button>
+        </div>
+    </div>
+    <div id="screen-4" class="screen">
+        <h1>HOW DARE YOU!!!!!!!!!!!!</h1>
+        <button class="Try Again" onclick="nextScreen(1)">Try Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
